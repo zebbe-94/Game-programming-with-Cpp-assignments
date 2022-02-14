@@ -2,13 +2,8 @@
 
 using namespace std;
 
-int absolute_value(int x){
-    return x < 0 ? -x : x;
-}
-
-int absolute_difference(int a, int b){
-    return absolute_value(a - b);
-}
+int absolute_value(int x);
+int absolute_difference(int a, int b);
 
 int main() {
     int a, b;
@@ -20,4 +15,10 @@ int main() {
     return 0;
 }
 
+int absolute_difference(int a, int b){
+    return absolute_value(a - b);
+}
 
+int absolute_value(int x){
+    return x < 0 ? -x : x;
+}
